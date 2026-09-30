@@ -130,7 +130,9 @@
     nextButton.disabled = isTurning || current >= sequence.length - 1 || (waitingForFinalAssets && state.pdfPage === 9);
     closeButton.hidden = current === 0;
     openCover.disabled = current !== 0 || isTurning;
-    nextButton.textContent = current === 0 ? 'OPEN BOOK →' : current === sequence.length - 1 ? 'THE END' : 'NEXT →';
+    const nextLabel = current === 0 ? 'OPEN BOOK' : current === sequence.length - 1 ? 'THE END' : 'NEXT';
+    const arrowIcon = current === sequence.length - 1 ? '' : ' <svg class="site-symbol site-symbol--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h18m-7-7 7 7-7 7"/></svg>';
+    nextButton.innerHTML = nextLabel + arrowIcon;
     status.textContent = current === 0
       ? 'CLOSED COVER / TAP TO OPEN'
       : `${state.label} / PDF PAGE ${String(state.pdfPage).padStart(2, '0')} OF 10`;
