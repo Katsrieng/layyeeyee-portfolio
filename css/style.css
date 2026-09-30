@@ -10,12 +10,6 @@
   --sans: Arial, Helvetica, sans-serif;
   --serif: Georgia, 'Times New Roman', serif;
 }
-
-/* Keep decorative marks as vector artwork across platforms, including iOS. */
-.site-symbol { display: inline-block; width: 1em; height: 1em; overflow: visible; vertical-align: -.14em; color: inherit; }
-.site-symbol path, .site-symbol line, .site-symbol polyline { vector-effect: non-scaling-stroke; }
-.site-symbol--star path, .site-symbol--arrow path, .site-symbol--crescent path, .site-symbol--envelope path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
-.site-symbol--heart path { fill: currentColor; stroke: none; }
 html { scroll-padding-top: 100px; }
 body { background: var(--cream); color: var(--black); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
 ::selection { background: var(--burgundy); color: var(--soft-white); }
