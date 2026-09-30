@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F5F0E8">
+  <meta name="description" content="Selected photography by Lay Yee Yee.">
+  <title>Photography — Lay Yee Yee</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F5F0E8'/%3E%3Ctext x='32' y='49' text-anchor='middle' font-size='53' fill='%2347799A'%3E✳%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/project-detail.css">
+  <link rel="stylesheet" href="css/photography.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script defer src="js/project-detail.js"></script>
+  <script defer src="js/photography.js"></script>
+</head>
+<body class="project-detail-page photography-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Lay Yee Yee — home">LAY YEE YEE<span aria-hidden="true">✳</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>MENU <span aria-hidden="true">+</span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="projects.html">PROJECTS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="photography-hero" aria-labelledby="photography-title">
+      <div class="photography-hero-top eyebrow"><span>SELECTED PHOTOGRAPHY</span><span>04 IMAGES</span></div>
+      <div class="photography-hero-grid">
+        <div class="photography-hero-copy">
+          <p class="photography-hero-index eyebrow" data-case-intro>THROUGH MY LENS</p>
+          <h1 id="photography-title" class="photography-title"><span class="case-title-mask"><span class="case-title-line">PHOTOGRAPHY</span></span></h1>
+          <p class="photography-hero-note eyebrow" data-case-reveal="up">A SMALL SELECTION<br>BY LAY YEE YEE <span aria-hidden="true">✳</span></p>
+        </div>
+        <figure class="photography-hero-image" data-case-reveal="scale">
+          <button class="photo-image-button" type="button" data-photo-index="0" aria-label="View photograph 1 of 4">
+            <img src="assets/photography/image85.jpeg" alt="Several people reflected above a wooden stairway; one person wears a graduation cap" width="1050" height="1575" fetchpriority="high">
+          </button>
+          <figcaption class="photo-image-caption eyebrow"><span>01 / 04</span><span>SELECTED PHOTOGRAPH</span></figcaption>
+        </figure>
+      </div>
+      <a class="photography-scroll eyebrow" href="#photography-gallery"><span>SCROLL TO VIEW</span><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="photography-intro case-shell" aria-label="About this selection">
+      <p class="eyebrow" data-case-intro>01 / THE COLLECTION</p>
+      <p data-case-reveal="up">Four selected photographs.</p>
+      <span aria-hidden="true">✳</span>
+    </section>
+
+    <section class="photography-gallery" id="photography-gallery" aria-labelledby="photography-gallery-title">
+      <div class="photography-gallery-heading">
+        <p class="eyebrow">02 / PHOTOGRAPHY</p>
+        <h2 id="photography-gallery-title">A closer<br><em>look.</em></h2>
+        <p class="eyebrow">SELECT AN IMAGE TO VIEW</p>
+      </div>
+      <div class="photography-portrait-pair">
+        <figure class="photography-tile photography-tile--backpack" data-case-reveal="side">
+          <button class="photo-image-button" type="button" data-photo-index="1" aria-label="View photograph 2 of 4">
+            <img src="assets/photography/image16.jpeg" alt="A person carrying a backpack outside a building" width="756" height="1344" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="photo-image-caption eyebrow"><span>02 / 04</span></figcaption>
+        </figure>
+        <figure class="photography-tile photography-tile--fragrance" data-case-reveal="up">
+          <button class="photo-image-button" type="button" data-photo-index="2" aria-label="View photograph 3 of 4">
+            <img src="assets/photography/image84.jpeg" alt="Two fragrance bottles arranged beside flowers and a dark ribbon" width="746" height="1229" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="photo-image-caption eyebrow"><span>03 / 04</span></figcaption>
+        </figure>
+      </div>
+
+      <figure class="photography-featured" data-case-reveal="scale">
+        <button class="photo-image-button" type="button" data-photo-index="3" aria-label="View photograph 4 of 4">
+          <img src="assets/photography/image83.jpeg" alt="Food and drinks arranged on a round serving board beside a plant" width="1405" height="984" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="photo-image-caption eyebrow"><span>04 / 04</span><span>SELECTED PHOTOGRAPH</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="photography-ending" aria-label="Continue exploring">
+      <p class="eyebrow">END OF SELECTION</p>
+      <nav aria-label="Photography page links">
+        <a href="index.html"><span>BACK TO HOME</span><span aria-hidden="true">←</span></a>
+        <a href="projects.html"><span>VIEW PROJECTS</span><span aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+  </main>
+
+  <dialog class="photo-viewer" data-photo-viewer aria-label="Photography viewer">
+    <div class="photo-viewer-inner">
+      <div class="photo-viewer-top"><p class="eyebrow" data-photo-count aria-live="polite">01 / 04</p><button class="photo-viewer-close eyebrow" type="button" data-photo-close aria-label="Close photograph viewer">CLOSE <span aria-hidden="true">×</span></button></div>
+      <button class="photo-viewer-arrow photo-viewer-previous" type="button" data-photo-previous aria-label="Previous photograph">←</button>
+      <figure class="photo-viewer-figure"><img data-photo-viewer-image alt=""><figcaption class="eyebrow" data-photo-caption>01 / 04</figcaption></figure>
+      <button class="photo-viewer-arrow photo-viewer-next" type="button" data-photo-next aria-label="Next photograph">→</button>
+    </div>
+  </dialog>
+
+  <footer class="site-footer section-shell">
+    <div class="footer-identity"><a class="wordmark" href="index.html">LAY YEE YEE</a><p>Graphic Designer</p></div>
+    <nav aria-label="Footer navigation"><a href="projects.html">PROJECTS</a><a href="about.html">ABOUT</a><a href="contact.html">CONTACT</a></nav>
+    <div class="footer-meta"><p class="eyebrow">PORTFOLIO / 2026</p><button class="motion-toggle" type="button" aria-pressed="false" hidden>PAUSE MOTION <span aria-hidden="true">Ⅱ</span></button></div>
+    <p class="footer-copyright">© 2026 Lay Yee Yee</p>
+  </footer>
+</body>
+</html>
